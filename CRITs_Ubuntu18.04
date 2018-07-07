@@ -1,4 +1,6 @@
 #The intent of this install is to setup CRITs from a clean install of UbuntuServer18.04
+#This script was put together because the bootstrapper doesn't work as well as expected and requires some knowledge on the admins part.
+
 #Adds the repo for libopenjpeg-dev
 sudo chmod 666 /etc/apt/sources.list
 sudo echo deb http://de.archive.ubuntu.com/ubuntu precise main restricted universe >> /etc/apt/sources.list
