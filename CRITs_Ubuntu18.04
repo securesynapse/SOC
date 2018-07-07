@@ -1,0 +1,97 @@
+#The intent of this install is to setup CRITs from a clean install of UbuntuServer18.04
+#Adds the repo for libopenjpeg-dev
+sudo chmod 666 /etc/apt/sources.list
+sudo echo deb http://de.archive.ubuntu.com/ubuntu precise main restricted universe >> /etc/apt/sources.list
+sudo echo deb-src http://de.archive.ubuntu.com/ubuntu precise restricted main multiverse universe >> /etc/apt/sources.list
+
+sudo echo deb http://de.archive.ubuntu.com/ubuntu precise-updates main restricted universe >> /etc/apt/sources.list
+sudo echo deb-src http://de.archive.ubuntu.com/ubuntu precise-updates restricted main multiverse universe >> /etc/apt/sources.list
+sudo chmod 644 /etc/apt/sources.list
+
+# initial updates and critical package installs
+sudo apt-get -y update
+sudo apt-get -y upgrade
+sudo apt-get -y install python-pip pkg-config autoconf libtool libnet1-dev
+sudo apt-get -y install libfuzzy-dev
+sudo apt-get -y install libpcap-dev
+sudo apt-get -y install libcap-dev
+sudo apt-get -y install swig
+sudo apt-get -y install python-m2crypto
+
+#Fixes SSL error
+sudo apt-get -y install libssl-dev
+
+#installs required pip packages prior to application install
+sudo -H pip install libpcap
+sudo -H pip install pyopenssl
+#sudo -H pip install libfoo
+
+#install libnids due to errors during the misp install
+#sudo apt-get install libperl-dev
+#sudo apt-get install libgtk2.0-dev
+cd /tmp
+#wget https://sourceforge.net/projects/libnids/files/libnids/1.24/libnids-1.24.tar.gz
+#tar -xvf libnids-1.24.tar.gz
+#cd libnids-1.24
+#sudo ./configure
+#make
+#sudo make install
+git clone https://github.com/MITRECND/libnids.git
+mv libnids/ libnids-1.25/
+cd libnids-1.25
+sudo ./configure
+make
+sudo make install
+
+#Beginning of MISP packages install
+cd /tmp
+wget https://github.com/VirusTotal/yara/archive/v3.7.0.tar.gz
+tar -zxf /tmp/v3.7.0.tar.gz
+cd yara-3.7.0
+sudo ./bootstrap.sh
+./configure
+make
+sudo make install
+sudo ln -s /usr/local/lib/libyara.so /usr/lib/libyara.so
+cd /data/
+sudo -H pip install --upgrade pip
+sudo -H pip install passivetotal==1.0.23
+sudo -H pip install cbapi
+sudo -H pip install mmbot
+sudo -H pip install ipwhois
+sudo -H pip install yara-python
+sudo -H pip install dnslib
+sudo -H pip install yaraprocessor
+sudo -H pip install pylibemu
+sudo -H pip install pymongo
+sudo -H pip install django-celery
+sudo -H pip install python-magic==0.4.6
+cd /opt
+sudo git clone https://github.com/crits/crits_services.git
+cd crits_services
+sudo -H ./bootstrap
+sudo -H pip uninstall yara -y
+cd /data
+sudo python /data/crits/manage.py setconfig service_dirs "/data/crits_services"
+sudo git clone https://github.com/Yara-Rules/rules.git
+cd rules
+sudo ./index_gen.sh
+cd /data
+sudo git clone https://github.com/MITRECND/chopshop.git
+cd /tmp
+sudo apt-get -y install zlib1g-dev
+sudo git clone https://github.com/MITRECND/htpy.git
+cd htpy
+sudo python setup.py install
+cd ..
+sudo  git clone https://github.com/buffer/libemu.git
+cd libemu
+sudo autoreconf -v -i
+sudo ./configure --prefix=/usr/local
+sudo make install
+sudo ldconfig
+cd /data/chopshop
+sudo make install
+make dependency-check
+#Issues exist getting the apache service to properly restart at the end of the script. Still work to be done.
+systemctl restart apache2.service
