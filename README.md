@@ -4,7 +4,7 @@ This Repo is a collection of scripts to install some of the most critical OSS av
 If you think about your SOC ecosystem you need a number of tools to assist with your operations.  
 
 Knowledge Management:
-- MISP
+- <a href="https://github.com/MISP/MISP">MISP</a>
 
 Detecting Threats:
 - Network Packet Based
