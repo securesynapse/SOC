@@ -1,5 +1,11 @@
+#############################################################################################
+#############################################################################################
 #The intent of this install is to setup CRITs from a clean install of UbuntuServer18.04
 #This script was put together to augment the bootstrapper and reduce the knowledge requirements by the admin.
+#############################################################################################
+#############################################################################################
+
+#############################################################################################
 #Adds the repo for libopenjpeg-dev
 sudo chmod 666 /etc/apt/sources.list
 sudo echo deb http://de.archive.ubuntu.com/ubuntu precise main restricted universe >> /etc/apt/sources.list
@@ -8,7 +14,9 @@ sudo echo deb-src http://de.archive.ubuntu.com/ubuntu precise restricted main mu
 sudo echo deb http://de.archive.ubuntu.com/ubuntu precise-updates main restricted universe >> /etc/apt/sources.list
 sudo echo deb-src http://de.archive.ubuntu.com/ubuntu precise-updates restricted main multiverse universe >> /etc/apt/sources.list
 sudo chmod 644 /etc/apt/sources.list
+#############################################################################################
 
+#############################################################################################
 # initial updates and critical package installs
 sudo apt-get -y update
 sudo apt-get -y upgrade
@@ -18,36 +26,40 @@ sudo apt-get -y install libpcap-dev
 sudo apt-get -y install libcap-dev
 sudo apt-get -y install swig
 sudo apt-get -y install python-m2crypto
+#############################################################################################
 
+#############################################################################################
 #Install of Apache
 sudo apt-get -y install apache2 apache2-bin
+#############################################################################################
 
+#############################################################################################
 #Fixes SSL error
 sudo apt-get -y install libssl-dev
+#############################################################################################
 
+#Fixes python-ldap error
+sudo apt-get -y install libldap2-dev libsasl2-dev
+
+#############################################################################################
 #installs required pip packages prior to application install
 sudo -H pip install libpcap
 sudo -H pip install pyopenssl
-#sudo -H pip install libfoo
+#############################################################################################
 
-#install libnids due to errors during the CRITs install
-#sudo apt-get install libperl-dev
-#sudo apt-get install libgtk2.0-dev
+#############################################################################################
+#install libnids due to errors during the misp install
 cd /tmp
-#wget https://sourceforge.net/projects/libnids/files/libnids/1.24/libnids-1.24.tar.gz
-#tar -xvf libnids-1.24.tar.gz
-#cd libnids-1.24
-#sudo ./configure
-#make
-#sudo make install
 git clone https://github.com/MITRECND/libnids.git
 mv libnids/ libnids-1.25/
 cd libnids-1.25
 sudo ./configure
 make
 sudo make install
+#############################################################################################
 
-#Beginning of MISP packages install
+#############################################################################################
+#Beginning of CRITs packages install
 cd /tmp
 wget https://github.com/VirusTotal/yara/archive/v3.7.0.tar.gz
 tar -zxf /tmp/v3.7.0.tar.gz
@@ -70,7 +82,7 @@ sudo -H pip install pylibemu
 sudo -H pip install pymongo
 sudo -H pip install django-celery
 sudo -H pip install python-magic==0.4.6
-cd /opt
+cd /data
 sudo git clone https://github.com/crits/crits_services.git
 cd crits_services
 sudo -H ./bootstrap
@@ -99,10 +111,15 @@ sudo make install
 make dependency-check
 systemctl restart apache2.service
 
+#############################################################################################
 #And now let's install crits :)
 sudo apt-get -y install mongodb
-cd /opt
+cd /data
 sudo git clone https://github.com/crits/crits.git
 sudo sed -i 's/mongodb-org/mongodb/g' /opt/crits/script/bootstrap
-cd /opt/crits/
+cd /data/crits/
+#############################################################################################
+
+#############################################################################################
 sudo ./script/bootstrap
+#############################################################################################
