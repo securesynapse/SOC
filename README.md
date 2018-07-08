@@ -15,7 +15,10 @@ Detecting Threats:
   - Xplico
 
 - Host Applications
-  - ClamAV 
+  - ClamAV
+  - Syslog (Linux / Mac)
+  - NXLog (Windows)
+  - WinLogBeat (Windows)
 
 Centralized Alert Storage:
 - ELK or SELKS
