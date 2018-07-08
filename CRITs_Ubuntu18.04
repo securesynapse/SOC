@@ -30,7 +30,7 @@ sudo -H pip install libpcap
 sudo -H pip install pyopenssl
 #sudo -H pip install libfoo
 
-#install libnids due to errors during the misp install
+#install libnids due to errors during the CRITs install
 #sudo apt-get install libperl-dev
 #sudo apt-get install libgtk2.0-dev
 cd /tmp
