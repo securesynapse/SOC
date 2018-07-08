@@ -4,44 +4,44 @@ This Repo is a collection of scripts to install some of the most critical OSS av
 If you think about your SOC ecosystem you need a number of tools to assist with your operations.  
 
 Knowledge Management:
-MISP
+- MISP
 
 Detecting Threats:
-Network Packet Based
-- SELKS
-- Security Onion
+- Network Packet Based
+  - SELKS
+  - Security Onion
 
-Network Session Based
-- Xplico
+- Network Session Based
+  - Xplico
 
-Host Applications
-ClamAV 
+- Host Applications
+  - ClamAV 
 
 Centralized Alert Storage:
-ELK or SELKS
-OSSIM
+- ELK or SELKS
+- OSSIM
 
 Intelligence Report Acquisition:
-MISP - has a built in TAXII Server 
+- MISP - has a built in TAXII Server 
 
 IOC Enrichment:
-Maltego - I know it's not free; but it's super cheap
+- Maltego - I know it's not free; but it's super cheap
 
 Forensics:
-GRR - Allows the ability to acquire live images from remote hosts
-SANS SIFT - Live forensic CD for image acquisition an analysis
-  dd - Forensic image acquisition (linux only and included in SIFT)
-Sleuthkit - Lots of great tools although I use most for timeline analysis
-Redline - Analyzing Forensic images. Simple interface; easy for junior members to use
-Volatility - Awesome for analyzing memory
+- GRR - Allows the ability to acquire live images from remote hosts
+- SANS SIFT - Live forensic CD for image acquisition an analysis
+  - dd - Forensic image acquisition (linux only and included in SIFT)
+- Sleuthkit - Lots of great tools although I use most for timeline analysis
+- Redline - Analyzing Forensic images. Simple interface; easy for junior members to use
+- Volatility - Awesome for analyzing memory
 
 Malware Analysis:
-REMNux
+- REMNux
 
 Malware Repository:
-CRITs
+- CRITs
 
 Vulnerability Management:
-OpenVAS
+- OpenVAS
 
 Please email me with recommendations on free OSS that I've missed that you feel should be on the list. securesynapse@gmail.com
