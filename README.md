@@ -21,7 +21,7 @@ Detecting Threats:
   - <a href="https://www.elastic.co/downloads/beats/winlogbeat">WinLogBeat (Windows)</a>
 
 Centralized Alert Storage:
-- ELK or SELKS
+- <a href="https://www.elastic.co/products/kibana">Kibana</a> or <a href="https://www.stamus-networks.com/open-source/">SELKS</a>
 - <a href="https://www.alienvault.com/products/ossim">OSSIM</a>
 
 Intelligence Report Acquisition:
