@@ -12,7 +12,7 @@ Detecting Threats:
   - <a href="https://securityonion.net/">Security Onion</a>
 
 - Network Session Based
-  - Xplico
+  - <A href="https://www.xplico.org/">Xplico</a>
 
 - Host Applications
   - <a href="https://www.clamav.net/">ClamAV</a>
@@ -34,9 +34,9 @@ Forensics:
 - <a href="https://github.com/google/grr">GRR</a> - Allows the ability to acquire live images from remote hosts
 - <a href="https://digital-forensics.sans.org/community/downloads">SANS SIFT</a> - Live forensic CD for image acquisition an analysis
   - dd - Forensic image acquisition (linux only and included in SIFT)
-- Sleuthkit - Lots of great tools although I use most for timeline analysis
+- <a href="http://www.sleuthkit.org/">Sleuthkit</a> - Lots of great tools although I use most for timeline analysis
 - <a href="https://www.fireeye.com/services/freeware/redline.html">Redline</a> - Analyzing Forensic images. Simple interface; easy for junior members to use
-- Volatility - Awesome for analyzing memory
+- <a href="https://www.volatilityfoundation.org/">Volatility</a> - Awesome for analyzing memory
 
 Malware Analysis:
 - <a href="https://remnux.org/">REMNux</a>
@@ -45,6 +45,6 @@ Malware Repository:
 - <a href="https://crits.github.io/">CRITs</a>
 
 Vulnerability Management:
-- OpenVAS
+- <a href="http://www.openvas.org/">OpenVAS</a>
 
 Please email me with recommendations on free OSS that I've missed that you feel should be on the list. securesynapse@gmail.com
