@@ -8,17 +8,17 @@ Knowledge Management:
 
 Detecting Threats:
 - Network Packet Based
-  - SELKS
-  - Security Onion
+  - <a href="https://www.stamus-networks.com/open-source/">SELKS</a>
+  - <a href="https://securityonion.net/">Security Onion</a>
 
 - Network Session Based
   - Xplico
 
 - Host Applications
-  - ClamAV
+  - <a href="https://www.clamav.net/">ClamAV</a>
   - Syslog (Linux / Mac)
-  - NXLog (Windows)
-  - WinLogBeat (Windows)
+  - <a href="https://nxlog.co/">NXLog (Windows)</a>
+  - <a href="https://www.elastic.co/downloads/beats/winlogbeat>WinLogBeat (Windows)</a>
 
 Centralized Alert Storage:
 - ELK or SELKS
