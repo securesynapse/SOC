@@ -18,31 +18,31 @@ Detecting Threats:
   - <a href="https://www.clamav.net/">ClamAV</a>
   - Syslog (Linux / Mac)
   - <a href="https://nxlog.co/">NXLog (Windows)</a>
-  - <a href="https://www.elastic.co/downloads/beats/winlogbeat>WinLogBeat (Windows)</a>
+  - <a href="https://www.elastic.co/downloads/beats/winlogbeat">WinLogBeat (Windows)</a>
 
 Centralized Alert Storage:
 - ELK or SELKS
-- OSSIM
+- <a href="https://www.alienvault.com/products/ossim">OSSIM</a>
 
 Intelligence Report Acquisition:
-- MISP - has a built in TAXII Server 
+- <a href="http://www.misp-project.org/">MISP</a> - has a built in TAXII Server 
 
 IOC Enrichment:
-- Maltego - I know it's not free; but it's super cheap
+- <A href="https://www.paterva.com/web7/">Maltego</a> - I know it's not free; but it's super cheap
 
 Forensics:
-- GRR - Allows the ability to acquire live images from remote hosts
-- SANS SIFT - Live forensic CD for image acquisition an analysis
+- <a href="https://github.com/google/grr">GRR</a> - Allows the ability to acquire live images from remote hosts
+- <a href="https://digital-forensics.sans.org/community/downloads">SANS SIFT</a> - Live forensic CD for image acquisition an analysis
   - dd - Forensic image acquisition (linux only and included in SIFT)
 - Sleuthkit - Lots of great tools although I use most for timeline analysis
-- Redline - Analyzing Forensic images. Simple interface; easy for junior members to use
+- <a href="https://www.fireeye.com/services/freeware/redline.html">Redline</a> - Analyzing Forensic images. Simple interface; easy for junior members to use
 - Volatility - Awesome for analyzing memory
 
 Malware Analysis:
-- REMNux
+- <a href="https://remnux.org/">REMNux</a>
 
 Malware Repository:
-- CRITs
+- <a href="https://crits.github.io/">CRITs</a>
 
 Vulnerability Management:
 - OpenVAS
