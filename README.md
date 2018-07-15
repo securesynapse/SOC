@@ -39,8 +39,11 @@ Forensics:
 - <a href="https://www.volatilityfoundation.org/">Volatility</a> - Awesome for analyzing memory
 
 Malware Analysis:
-- <a href="https://remnux.org/">REMNux</a>
-
+- Static
+  - <a href="https://remnux.org/">REMNux</a>
+- Dynamic
+  - <a href="https://cuckoosandbox.org/">Cuckoo Sandbox</a>
+  
 Malware Repository:
 - <a href="https://crits.github.io/">CRITs</a>
 
