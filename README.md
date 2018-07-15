@@ -44,6 +44,9 @@ Malware Analysis:
 Malware Repository:
 - <a href="https://crits.github.io/">CRITs</a>
 
+Security Orchestration:
+- <a href="https://github.com/nsacyber/WALKOFF">WalkOFF</a>
+
 Vulnerability Management:
 - <a href="http://www.openvas.org/">OpenVAS</a>
 
