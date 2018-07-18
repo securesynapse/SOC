@@ -1,5 +1,5 @@
 Creating a SOC with OSS<br>
-This Repo is a collection of scripts to install some of the most critical OSS available for Security Operation Centers. I have found through my experience that one of the largest barriers to the implementation of some of these fantastic tools is the challenges that are presented when attempting to install them.
+This Repo is a collection of scripts to install some of the most critical OSS available for Security Operation Centers. Links have also been provided to the tools. I have found through my experience that one of the largest barriers to the implementation of some of these fantastic tools is the challenges that are presented when attempting to install them.
 
 If you think about your SOC ecosystem you need a number of tools to assist with your operations.  
 
