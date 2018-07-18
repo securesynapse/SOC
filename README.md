@@ -38,6 +38,9 @@ Forensics:
 - <a href="https://www.fireeye.com/services/freeware/redline.html">Redline</a> - Analyzing Forensic images. Simple interface; easy for junior members to use
 - <a href="https://www.volatilityfoundation.org/">Volatility</a> - Awesome for analyzing memory
 
+Threat Hunting
+- <a href="https://github.com/Cyb3rWard0g/HELK">HELK</a> - Needs a fairly beefy system for testing 
+
 Malware Analysis:
 - Static
   - <a href="https://remnux.org/">REMNux</a>
@@ -52,5 +55,9 @@ Security Orchestration:
 
 Vulnerability Management:
 - <a href="http://www.openvas.org/">OpenVAS</a>
+
+Rule Validation - MITRE ATT&CK Framework (Red team activities)
+- <a href="https://github.com/uber-common/metta">Metta</a>
+- <a href="https://github.com/redcanaryco/atomic-red-team">Atomic Red Team</a>
 
 Please email me with recommendations on free OSS that I've missed that you feel should be on the list. securesynapse@gmail.com
