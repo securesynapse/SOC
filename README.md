@@ -26,6 +26,7 @@ Centralized Alert Storage:
 
 Intelligence Report Acquisition:
 - <a href="http://www.misp-project.org/">MISP</a> - has a built in TAXII Server 
+- <a href="https://www.anomali.com/platform/staxx">STAXX</a>
 
 IOC Enrichment:
 - <A href="https://www.paterva.com/web7/">Maltego</a> - I know it's not free; but it's super cheap
