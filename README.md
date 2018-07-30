@@ -63,5 +63,7 @@ Rule Validation - MITRE ATT&CK Framework (Red team activities)
 
 Software Inventory:
 - <a href="https://www.ocsinventory-ng.org/">OCS Inventory-NG</a>
-  
+
+Interesting Projects:
+- <a href="https://github.com/activecm/rita">RITA</a> - Real Intelligence Threat Analytics
 Please email me with recommendations on free OSS that I've missed that you feel should be on the list. securesynapse@gmail.com
