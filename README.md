@@ -61,4 +61,7 @@ Rule Validation - MITRE ATT&CK Framework (Red team activities)
 - <a href="https://github.com/uber-common/metta">Metta</a>
 - <a href="https://github.com/redcanaryco/atomic-red-team">Atomic Red Team</a>
 
+Software Inventory:
+- <a href="https://www.ocsinventory-ng.org/">OCS Inventory-NG>/a>
+  
 Please email me with recommendations on free OSS that I've missed that you feel should be on the list. securesynapse@gmail.com
