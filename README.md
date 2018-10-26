@@ -3,8 +3,9 @@ This Repo is a collection of scripts to install some of the most critical OSS av
 
 If you think about your SOC ecosystem you need a number of tools to assist with your operations.  
 
-Knowledge Management:
+Knowledge Management/TIP:
 - <a href="https://github.com/MISP/MISP">MISP</a>
+- <a href="https://github.com/yeti-platform/yeti>YETI</a>
 
 Detecting Threats:
 - Network Based
@@ -26,6 +27,7 @@ Centralized Alert Storage:
 Intelligence Report Acquisition:
 - <a href="http://www.misp-project.org/">MISP</a> - has a built in TAXII Server 
 - <a href="https://www.anomali.com/platform/staxx">STAXX</a>
+- <a href="https://github.com/yeti-platform/yeti">YETI</a>
 
 IOC Enrichment:
 - <A href="https://www.paterva.com/web7/">Maltego</a> - I know it's not free; but it's super cheap
