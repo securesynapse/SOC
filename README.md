@@ -5,7 +5,7 @@ If you think about your SOC ecosystem you need a number of tools to assist with 
 
 Knowledge Management/TIP:
 - <a href="https://github.com/MISP/MISP">MISP</a>
-- <a href="https://github.com/yeti-platform/yeti>YETI</a>
+- <a href="https://github.com/yeti-platform/yeti">YETI</a>
 
 Detecting Threats:
 - Network Based
