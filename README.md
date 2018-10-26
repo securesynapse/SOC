@@ -10,6 +10,7 @@ Detecting Threats:
 - Network Packet Based
   - <a href="https://www.stamus-networks.com/open-source/">SELKS</a>
   - <a href="https://securityonion.net/">Security Onion</a>
+  - <a href="http://rocknsm.io/">RockNSM</a>
 
 - Network Session Based
   - <A href="https://www.xplico.org/">Xplico</a>
