@@ -48,6 +48,7 @@ Malware Analysis:
   - <a href="https://remnux.org/">REMNux</a>
 - Dynamic
   - <a href="https://cuckoosandbox.org/">Cuckoo Sandbox</a>
+  - <a href="https://github.com/lmco/laikaboss">LaikABoss</a>
   
 Malware Repository:
 - <a href="https://crits.github.io/">CRITs</a>
